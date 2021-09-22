@@ -151,4 +151,6 @@ console.log(details.filter(contact => contact._state == "Tennessee")
 console.log(details.filter(contact => contact.city == "Saltlakecity")
         .reduce((count, contact) => contact.firstName ? ++count : count,0));
 console.log(details.filter(contact => contact.state == "Utah")
-            .reduce((count, contact) => contact.firstName ? ++count : count, 0));     
+            .reduce((count, contact) => contact.firstName ? ++count : count, 0));        
+
+console.log(details.sort((a, b) => a.lastName.localeCompare(b.lastName)));            
